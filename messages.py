@@ -5,16 +5,16 @@ import config
 
 REGISTER_MESSAGE: str = inspect.cleandoc("""*Welcome to WiCHacks!*
 
-    *To Check-In*: Before you access our Discord server, we’ll need to verify your account. Please click the emoji below to get started
+    *To Check-In*: Before you access our Discord server, we’ll need to verify your account. Please click the emoji below to get started.
 
     *Notes:*
     *Please make sure that you have a country on your WiCHacks application
     *Please allow “Allow direct message from server members" to get a message from our bot
 
-    If you are a volunteer or mentor, please message in #check-in-desk for assisstance """)
+    If you are a volunteer or mentor, please message in #check-in-desk for assistance """)
 
 def setup_message(url: str):
-    return f"Click this link to setup authbot-py: {url}"
+    return f"Click this link to setup authbot-wic: {url}"
 
 def user_setup(name: str, auth_url: str) -> str:
     return inspect.cleandoc(f"""Hi {name}! Welcome to WiCHacks. There's a few things I need to have you do in order to check you in.

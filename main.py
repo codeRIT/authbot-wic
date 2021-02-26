@@ -3,6 +3,7 @@ import asyncio
 from auth_user import AuthUser
 from typing import Dict, NoReturn
 from discord import Role
+from discord import File
 from discord.channel import TextChannel
 from discord.client import Client
 from discord.utils import get
@@ -166,11 +167,13 @@ async def send_register_message():
         logging.error("_setup_channel not defined")
         return
 
+    # Send the WiCHacks image first
+    await _setup_channel.send(file=File('./static/wichacks.jpg'))
+
     global _register_message
     _register_message = await _setup_channel.send(messages.REGISTER_MESSAGE)
 
     await _register_message.add_reaction(emoji="👩‍💻")  # :woman_technologist:
-
 
 async def set_role(user: AuthUser):
 
