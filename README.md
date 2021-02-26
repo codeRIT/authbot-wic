@@ -1,1 +1,3 @@
-# ALWAYS RERUN THE FUCKING PIPENV TO REST THE FUCKING .ENV
+# WiC Authbot
+
+Guide for how to run coming soon!

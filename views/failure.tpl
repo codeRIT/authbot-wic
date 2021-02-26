@@ -4,21 +4,21 @@
     <title>Authorization Failure</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
 
-    <link rel="icon" type="image/png" sizes="32x32" href="/static/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="/static/favicon-16x16.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/static/favicon.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/static/favicon.png">
 
     <style>
         * {
             margin: 0;
             padding: 0;
             color: white;
-            font-family: "Poppins", sans-serif;
+            font-family: "Montserrat", sans-serif;
             box-sizing: border-box;
         }
         body {
-            background-color: #2A407D;
+            background-color: #800080;
         }
         main {
             min-height: 100vh;
@@ -76,11 +76,11 @@
 </head>
 <body>
     <main>
-        <img src="/static/authbotFailure.png" alt="Authbot found a problem.">
+        <img src="/static/wichacks.jpg" alt="Authbot found a problem.">
         <div>
             <h1>Authorization Failed!</h1>
             <p>{{ reason }}</p>
-            <p>For assistance, send us a message in <span>#registration-help</span></p>
+            <p>For assistance, send us a message in <span>#check-in-desk</span></p>
         </div>
     </main>
 </body>

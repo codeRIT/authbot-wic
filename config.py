@@ -18,7 +18,7 @@ CLIENT_SECRET: str = os.getenv("CLIENT_SECRET")
 REDIRECT_URI: str = os.getenv("REDIRECT_URI")
 OAUTH_SCOPES: List[str] = ["main"]
 
-APPLY_URL: str = "https://apply.brickhack.io"
+APPLY_URL: str = "https://apply.wichacks.io/"
 
 HOST: str = os.getenv("HOST", "localhost")
 PORT: str = os.getenv("PORT", 8080)

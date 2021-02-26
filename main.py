@@ -169,7 +169,7 @@ async def send_register_message():
     global _register_message
     _register_message = await _setup_channel.send(messages.REGISTER_MESSAGE)
 
-    await _register_message.add_reaction("\U0001F9F1")  # :bricks:
+    await _register_message.add_reaction(emoji="👩‍💻")  # :woman_technologist:
 
 
 async def set_role(user: AuthUser):
