@@ -21,6 +21,10 @@ def user_setup(name: str, auth_url: str) -> str:
     First, open the following link to connect your WiCHacks registration to your Discord: {auth_url}
     """)
 
+MISSING_QUESTIONNAIRE = inspect.cleandoc(f"""Uh oh, it looks like we can't retrieve your questionnaire.
+        Make sure you are signed with the same account you applied to at {config.APPLY_URL}
+        Try clicking the 👩‍💻 in WiCHacks's Discord server again to restart the check-in process. If this happens again, contact an admin for help.""")
+
 
 PENDING = inspect.cleandoc("""Uh oh, it looks like you haven't received an acceptance to WiCHacks.
         If you do receive an acceptance just click the 👩‍💻 in WiCHacks's Discord server again, and I can get you set up!""")

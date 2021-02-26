@@ -124,7 +124,7 @@ async def handle_auth(user: AuthUser):
     if questionnaire is None or questionnaire.get("error") is not None:
         logging.error("bad: could not retrieve questionnaire")
         log_user(user)
-        await user.member.send("bad: could not retrieve questionnaire")
+        await user.member.send(messages.MISSING_QUESTIONNAIRE)
         logging.info("--------")
         return
 
@@ -151,6 +151,7 @@ async def handle_auth(user: AuthUser):
 
         # will send the appropriate message for accepted/denied/waitlisted/etc.
         await user.member.send(messages.ACC_STATUS_MESSAGES[questionnaire["acc_status"]])
+        user.delete()
 
     logging.info("--------")
 

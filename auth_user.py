@@ -67,3 +67,6 @@ class AuthUser:
     def check_in_user(self, id: int):
         url: str = f"{config.AUTH_URL}/manage/questionnaires/{id}/check_in.json"
         self.oauth_client.patch(url, params={"check_in": "true"})
+
+    def delete(self):
+        self._users.pop(self.id)
