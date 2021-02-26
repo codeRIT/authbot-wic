@@ -6,8 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
 
-    <link rel="icon" type="image/png" sizes="32x32" href="/static/favicon.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="/static/favicon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/static/favicon32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/static/favicon16x16.png">
 
     <style>
         * {
