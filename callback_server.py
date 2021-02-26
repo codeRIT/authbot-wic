@@ -14,13 +14,10 @@ def callback():
         user_id: str = request.params["state"]
         user: AuthUser
         if user_id == "server":
-            print("1")
             user = AuthUser.server_user()
         else:
-            print("2")
             user = AuthUser.from_id(user_id)
 
-        print("3")
         print("USER: " + str(user))
         user.get_access_token(request.params["code"])
         callback_func(user)

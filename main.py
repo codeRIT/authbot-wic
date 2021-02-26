@@ -129,8 +129,8 @@ async def handle_auth(user: AuthUser):
 
     # Log user and questionnaire params of interest
     log_user(user)
-    logging.info("acc_status: " + questionnaire.get("acc_status"))
-    logging.info("country: " + questionnaire.get("country", "NOT SET"))
+    logging.info("acc_status: " + str(questionnaire.get("acc_status")))
+    logging.info("country: " + str(questionnaire.get("country")))
 
     # Questionnaire parsing
     if questionnaire["country"] is None:

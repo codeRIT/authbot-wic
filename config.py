@@ -6,7 +6,7 @@ import os
 load_dotenv(override=True)
 
 PREFIX: str = "/"
-REGISTRATION_ROLE: str = "Hacker"
+REGISTRATION_ROLE: str = "Hackers"
 
 AUTH_TOKEN: str = os.getenv("AUTH_TOKEN")
 AUTH_URL: str = os.getenv("AUTH_URL")
