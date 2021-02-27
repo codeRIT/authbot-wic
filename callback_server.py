@@ -23,8 +23,8 @@ def callback():
         callback_func(user)
 
         return template("success")
-    # except AttributeError:  # user hasn't started the auth flow yet
-        # return template("failure", reason="Authorization flow hasn't begun yet.")
+    except AttributeError:  # user hasn't started the auth flow yet
+        return template("failure", reason="Authorization flow hasn't begun yet. Please make sure that you aren't using the same authorization link twice.")
     except InvalidGrantError:  # user is re-using an access code
         return template("failure", reason="Invalid authorization grant.")
     except KeyError:  # query parameters missing
