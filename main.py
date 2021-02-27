@@ -126,6 +126,7 @@ async def handle_auth(user: AuthUser):
         log_user(user)
         await user.member.send(messages.MISSING_QUESTIONNAIRE)
         logging.info("--------")
+        user.delete()
         return
 
     # Log user and questionnaire params of interest
@@ -151,9 +152,9 @@ async def handle_auth(user: AuthUser):
 
         # will send the appropriate message for accepted/denied/waitlisted/etc.
         await user.member.send(messages.ACC_STATUS_MESSAGES[questionnaire["acc_status"]])
-        user.delete()
 
     logging.info("--------")
+    user.delete()
 
 
 
